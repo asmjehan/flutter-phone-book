@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "730306930619",
+    "project_id": "flutter-phonebook",
+    "storage_bucket": "flutter-phonebook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730306930619:android:5304b2c2e3ab31dd82469e",
+        "android_client_info": {
+          "package_name": "com.example.phonebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730306930619-98h9b7uekj4ddgc9tf5p392pp1rf439p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.phonebook",
+            "certificate_hash": "ba21b007c515e3ac386d760255a164d59b84767d"
+          }
+        },
+        {
+          "client_id": "730306930619-0gub7vtubjd6dh5o0q9rr5l5h0umkgkf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-VcZNC6d__MHKj7vtc6bXMDIWO_1nc78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730306930619-0gub7vtubjd6dh5o0q9rr5l5h0umkgkf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
