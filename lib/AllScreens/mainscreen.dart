@@ -14,6 +14,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  bool isSearching = false;
   ContactHelper helper = ContactHelper();
   List<Contact> contacts = [];
 
@@ -27,10 +28,32 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Contact List'),
+        title: !isSearching
+            ? Text('Contact List')
+            : TextField(
+                style: TextStyle(color: Colors.white),
+                decoration: InputDecoration(
+                    icon: Icon(Icons.search, color: Colors.white),
+                    hintText: "Search by name or number"),
+              ),
         backgroundColor: Color(0xfffca103),
         centerTitle: true,
         actions: <Widget>[
+          isSearching
+              ? IconButton(
+                  icon: Icon(Icons.cancel),
+                  onPressed: () {
+                    setState(() {
+                      this.isSearching = false;
+                    });
+                  })
+              : IconButton(
+                  icon: Icon(Icons.search),
+                  onPressed: () {
+                    setState(() {
+                      this.isSearching = true;
+                    });
+                  }),
           PopupMenuButton<OrderOptions>(
             itemBuilder: (context) => <PopupMenuEntry<OrderOptions>>[
               const PopupMenuItem<OrderOptions>(
